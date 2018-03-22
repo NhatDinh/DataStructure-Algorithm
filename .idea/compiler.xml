@@ -5,6 +5,12 @@
       <profile default="true" name="Default">
         <processorPath useClasspath="false" />
       </profile>
+      <profile name="checker" enabled="true">
+        <processor name="org.checkerframework.checker.index.IndexChecker" />
+        <processorPath useClasspath="false">
+          <entry name="$USER_HOME$/Downloads/checker-framework-2.4.0/checker/dist/checker.jar" />
+        </processorPath>
+      </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">

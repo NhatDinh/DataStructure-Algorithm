@@ -132,9 +132,9 @@ public class DoubleNode {
 	        
 	        dll.insertAtEnd(4);                        // 1 -> 2 -> 3 -> 4 -> NULL
 	         
-	        dll.removeAtStart();                       // 2 -> 3 -> 4 -> NULL
+	        dll.removeAtStart();                          // 2 -> 3 -> 4 -> NULL
 	        
-	        dll.removeAtEnd();                         // 2 -> 3 -> NULL
+	        dll.removeAtEnd();                            // 2 -> 3 -> NULL
 	        
 	        dll.insertAtStart(1);                      // 1 -> 2 -> 3 -> NULL
 	        
@@ -142,11 +142,11 @@ public class DoubleNode {
 	        
 	        dll.insertBefore(4, dll.head.next.next);   // 1 -> 2 -> 4 -> 5 -> 3 -> NULL
 	        
-	        dll.moveToFront(dll.head.next.next);       // 4 -> 1 -> 2 -> 5 -> 3 -> NULL
+	        dll.moveToFront(dll.head.next.next);          // 4 -> 1 -> 2 -> 5 -> 3 -> NULL
 	        
-	        dll.moveToEnd(dll.head.next.next.next);    // 4 -> 1 -> 2 -> 3 -> 5 -> NULL
+	        dll.moveToEnd(dll.head.next.next.next);       // 4 -> 1 -> 2 -> 3 -> 5 -> NULL
 	        
-	        dll.removeAt(dll.head.next.next);          // 4 -> 1 -> 3 -> 5 -> NULL
+	        dll.removeAt(dll.head.next.next);             // 4 -> 1 -> 3 -> 5 -> NULL
 	        System.out.println("Created DLL is: ");
 	        dll.printList(dll.head);
 	    }

@@ -1,0 +1,21 @@
+<component name="libraryTable">
+  <library name="checker-compat-qual-source">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Downloads/checker-framework-2.4.0/checker/dist/checker-compat-qual.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/checker-framework-2.4.0/checker/dist/checker-qual.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/checker-framework-2.4.0/checker/dist/checker-qual7.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/checker-framework-2.4.0/checker/dist/checker.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/checker-framework-2.4.0/checker/dist/javac.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/checker-framework-2.4.0/checker/dist/jdk8.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/Downloads/checker-framework-2.4.0/checker/dist/checker-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/Downloads/checker-framework-2.4.0/checker/dist/checker-compat-qual-source.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/checker-framework-2.4.0/checker/dist/checker-qual-source.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/checker-framework-2.4.0/checker/dist/checker-qual7-source.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/checker-framework-2.4.0/checker/dist/checker-source.jar!/" />
+    </SOURCES>
+  </library>
+</component>
