@@ -1,7 +1,7 @@
 package sorting;
 
-class insertionSort {
-    // 0(n) run time with 0(1) memory
+class InsertionSort {
+    // 0(n^2) run time with 0(1) memory
     static char[] sort(String str) {
         int len = str.length();
         char[] array = str.toCharArray();
@@ -19,8 +19,6 @@ class insertionSort {
             }
             sorted[i] = array[i];
             printSorted(sorted);
-            System.out.println();
-
         }
         return sorted;
     }
@@ -30,6 +28,7 @@ class insertionSort {
         for (int i = 0; i < array.length; i++){
             System.out.print(arr[i] + ",");
         }
+         System.out.println();
     }
 
     public static void main(String[] args) {

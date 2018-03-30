@@ -10,10 +10,12 @@
         <processorPath useClasspath="false">
           <entry name="$USER_HOME$/Downloads/checker-framework-2.4.0/checker/dist/checker.jar" />
         </processorPath>
+        <module name="Test" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel target="1.8" />
   </component>
   <component name="JavacSettings">
-    <option name="ADDITIONAL_OPTIONS_STRING" value="-Xbootclasspath/p:&quot;$CHECKERFRAMEWORK/checker/dist/jdk8.jar&quot;" />
+    <option name="ADDITIONAL_OPTIONS_STRING" value="-Xbootclasspath/p:&quot;$USER_HOME$/Downloads/checker-framework-2.4.0/checker/dist/jdk8.jar&quot;" />
   </component>
 </project>
