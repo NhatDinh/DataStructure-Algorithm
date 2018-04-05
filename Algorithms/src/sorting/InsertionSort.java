@@ -1,37 +1,37 @@
 package sorting;
 
 class InsertionSort {
-    // 0(n^2) run time with 0(1) memory
-    static char[] sort(String str) {
-        int len = str.length();
-        char[] array = str.toCharArray();
-        char[] sorted = new char[len];
-        sorted[0] = array[0];
-
-        for (int i = 1; i < str.length(); i++) {
-            for (int n = 0; n < len - 1 ; n++) {
-                if (array[i] < sorted[n]) {
-                    char tmp = sorted[n];
-                    sorted[n] = array[i];
-                    array[i] = tmp;
+    //O(N^2) run time, 0(1) memory
+    String insertionSort(String str){
+        char[] arr = str.toCharArray();
+        for (int unsorted = 1; unsorted < arr.length; unsorted++){//O(N) run time
+            //O(N) run time
+            for (int sorted = 0; sorted < unsorted; sorted++){
+                while (arr[unsorted] < arr[sorted]){
+                    //swap sorted and unsorted element
+                    char tmp = arr[sorted];
+                    arr[sorted] = arr[unsorted];
+                    arr[unsorted] = tmp;
                 }
-                else break;
             }
-            sorted[i] = array[i];
-            printSorted(sorted);
+            str = new String(arr);
+            show(str);
         }
-        return sorted;
+        //convert char arr to string
+        return str;
     }
+
     //utility method to print array
-     static void printSorted(char[] array){
-        char[] arr = array;
-        for (int i = 0; i < array.length; i++){
-            System.out.print(arr[i] + ",");
+    static void show(String str){
+        for (int i = 0; i < str.length(); i++){
+            System.out.print(str.charAt(i) + ",");
         }
-         System.out.println();
+        System.out.println();
     }
 
     public static void main(String[] args) {
-        sort("ILOVEALGORITHMS");
+        InsertionSort is = new InsertionSort();
+        is.insertionSort("ILOVEALGORITHMS");
+
     }
 }
