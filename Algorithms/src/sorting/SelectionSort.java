@@ -4,13 +4,10 @@ public class SelectionSort {
     //0(N^2) run time, 0(1) memory
     String selectionSort(String str) {
         char[] arr = str.toCharArray();
-        int pos = 0;
-        int smallest_pos = 0;
+        int pos = 0, ops = 1, smallest_pos = 0;
 
         //O(N) run time
         while (pos < str.length()){
-            str = new String(arr);
-            show(str);
             //init smallest
             char smallest = arr[pos];
             //Get smallest element
@@ -25,6 +22,10 @@ public class SelectionSort {
             arr[smallest_pos] = arr[pos];
             arr[pos] = smallest;
             pos++;
+            //ops++;
+            //System.out.println("OPS: #" + ops);
+            str = new String(arr);
+            show(str);
         }
         return str;
     }

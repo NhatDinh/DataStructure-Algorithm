@@ -4,18 +4,22 @@ class InsertionSort {
     //O(N^2) run time, 0(1) memory
     String insertionSort(String str){
         char[] arr = str.toCharArray();
+        int ops = 1;
         for (int unsorted = 1; unsorted < arr.length; unsorted++){//O(N) run time
             //O(N) run time
             for (int sorted = 0; sorted < unsorted; sorted++){
+                //shift sorted to the right
                 while (arr[unsorted] < arr[sorted]){
                     //swap sorted and unsorted element
                     char tmp = arr[sorted];
                     arr[sorted] = arr[unsorted];
                     arr[unsorted] = tmp;
+                    str = new String(arr);
+                    System.out.println("OPS: #" + ops);
+                    show(str);
+                    ops++;
                 }
             }
-            str = new String(arr);
-            show(str);
         }
         //convert char arr to string
         return str;
