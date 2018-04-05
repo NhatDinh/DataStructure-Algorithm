@@ -5,15 +5,13 @@ import org.checkerframework.checker.index.qual.NonNegative;
 import org.checkerframework.common.value.qual.MinLen;
 
 public class SimpleMethod3 {
-    @NonNegative @LTLengthOf(value = {"this.array1","this.array2"}, offset = "1") int offset;
-    int[] array1 = new int[10];
-    int[] array2 = new int[10];
+    @NonNegative @LTLengthOf(value = {"this.arr1","this.arr2"}, offset = {"1","0"}) int offset;
+    int[] arr1 = new int[10];
+    int[] arr2 = new int[10];
 
-    void simple(int val,@NonNegative int offset){
-        this.offset = offset;
-        array1[1 + offset] = val;
-        array2[1 + offset] = val;
-
+    void simple(int val){
+        arr1[this.offset + 1] = val;
+        arr2[this.offset] = val;
     }
     public static void main(String args[]) {
     }

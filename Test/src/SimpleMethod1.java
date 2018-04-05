@@ -4,7 +4,7 @@ import org.checkerframework.checker.index.qual.NonNegative;
 
 public class SimpleMethod1 {
     int[] fields_arr = new int[10];
-    void simpleMethod( @IndexFor(value = {"this.fields_arr", "para_arr","local_arr"}) int i, int[] para_arr) {
+    void simpleMethod( @LTLengthOf(value = {"this.fields_arr", "#2"}) int i, int[] para_arr) {
         int[] local_arr = new int[10];
         this.fields_arr[i] = i;
         para_arr[i] = i;
