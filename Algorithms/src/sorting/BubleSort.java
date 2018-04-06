@@ -1,5 +1,5 @@
 public class BubleSort {
-
+    //O(N^2) run time, 0(1) memory
     String bubleSort(String str){
         char[] arr = str.toCharArray();
         int ops = 1;

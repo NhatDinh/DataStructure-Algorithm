@@ -22,8 +22,8 @@ public class SelectionSort {
             arr[smallest_pos] = arr[pos];
             arr[pos] = smallest;
             pos++;
-            //ops++;
-            //System.out.println("OPS: #" + ops);
+            ops++;
+            System.out.println("OPS: #" + ops);
             str = new String(arr);
             show(str);
         }
