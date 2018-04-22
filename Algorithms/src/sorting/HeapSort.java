@@ -1,3 +1,4 @@
+import java.util.*;
 public class HeapSort {
     //convert unordered array into heap structure
     //O(N) run time
@@ -51,7 +52,18 @@ public class HeapSort {
         return arr;
     }
 
-
+    //fill arr with 100 randomly generated distinct keys range 0 to 1000
+    void fillArr(int[] arr){
+        //technique to generate unique key
+        ArrayList<Integer> list = new ArrayList<Integer>();
+        for (int i = 0; i < 1000; i++) {
+            list.add(new Integer(i));
+        }
+        Collections.shuffle(list);
+        for (int i = 0; i < 100; i++){
+            arr[i] = list.get(i);
+        }
+    }
     //utility method to print array
     static void show(int[] array){
         for (int i = 0; i < array.length; i++){
@@ -59,20 +71,21 @@ public class HeapSort {
         }
         System.out.println();
     }
-    public static void main(String[] args) {
-        int[] test_arr1 = {4,1,3,9,7};
-        int[] test_arr2 = {11,1,4,5,6,2,8,9,15,12};
-        int[] sorted1 = new int[test_arr1.length];
-        int[] sorted2 = new int[test_arr2.length];
-        System.out.println("Original: ");
-        show(test_arr1);
-        show(test_arr1);
 
-        //heap sort
-        HeapSort hs = new HeapSort();
-        sorted1 = hs.heapSort(test_arr1);
-        sorted2 = hs.heapSort(test_arr2);
-        show(sorted1);
-        show(sorted2);
+    public static void main(String[] args) {
+        //3 run time
+        int run = 1;
+        while (run <= 2) {
+            System.out.println("Run #" + run++);
+            int[] arr = new int[100];
+            //heap sort
+            HeapSort hs = new HeapSort();
+            hs.fillArr(arr);
+            System.out.println("Unsorted array: ");
+            show(arr);
+            System.out.println("Sorted array: ");
+            hs.heapSort(arr);
+            show(arr);
+        }
     }
 }
