@@ -2,19 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="40077066-56b3-4b74-ae68-b8445632373e" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/Algorithms/src/searching/SequentialSearchST.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Algorithms/Algorithms.iml" afterPath="$PROJECT_DIR$/Algorithms/Algorithms.iml" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithms/BubleSort.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithms/HeapSort.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithms/LinkedList$node.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithms/LinkedList.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithms/OptimizedQuickSort.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithms/QuickSort.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithms/ShellSort.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithms/TopDownMergeSort.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithms/sorting/SelectionSort.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithms/sorting/insertionSort.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Algorithms/src/searching/SequentialSearchST.java" afterPath="$PROJECT_DIR$/Algorithms/src/searching/SequentialSearchST.java" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithms/SequentialSearchST.class" afterPath="$PROJECT_DIR$/out/production/Algorithms/SequentialSearchST.class" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -38,15 +28,15 @@
       <file leaf-file-name="SequentialSearchST.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Algorithms/src/searching/SequentialSearchST.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="103" column="66" lean-forward="false" selection-start-line="103" selection-start-column="66" selection-end-line="103" selection-end-column="66" />
+            <state relative-caret-position="205">
+              <caret line="101" column="10" lean-forward="false" selection-start-line="101" selection-start-column="10" selection-end-line="101" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#863#864#0" expanded="true" />
-                <element signature="e#887#888#0" expanded="true" />
-                <element signature="e#1091#1092#0" expanded="true" />
-                <element signature="e#1125#1126#0" expanded="true" />
-                <element signature="e#4870#4887#0" expanded="true" />
+                <element signature="e#859#860#0" expanded="true" />
+                <element signature="e#883#884#0" expanded="true" />
+                <element signature="e#1087#1088#0" expanded="true" />
+                <element signature="e#1121#1122#0" expanded="true" />
+                <element signature="e#4813#4830#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -465,7 +455,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.81883025" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.50784594" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952926" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952926" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -844,15 +834,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Algorithms/src/searching/SequentialSearchST.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="103" column="66" lean-forward="false" selection-start-line="103" selection-start-column="66" selection-end-line="103" selection-end-column="66" />
+        <state relative-caret-position="205">
+          <caret line="101" column="10" lean-forward="false" selection-start-line="101" selection-start-column="10" selection-end-line="101" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#863#864#0" expanded="true" />
-            <element signature="e#887#888#0" expanded="true" />
-            <element signature="e#1091#1092#0" expanded="true" />
-            <element signature="e#1125#1126#0" expanded="true" />
-            <element signature="e#4870#4887#0" expanded="true" />
+            <element signature="e#859#860#0" expanded="true" />
+            <element signature="e#883#884#0" expanded="true" />
+            <element signature="e#1087#1088#0" expanded="true" />
+            <element signature="e#1121#1122#0" expanded="true" />
+            <element signature="e#4813#4830#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -4,7 +4,7 @@ import java.util.Queue;
 public class SequentialSearchST<Key, Value> {
     private int n;           // number of key-value pairs
     private Node first;      // the linked list of key-value pairs
-    int total_compares = 0;
+    int total_comp = 0;
     // a helper linked list data type
     private class Node {
         private Key key;
@@ -84,24 +84,24 @@ public class SequentialSearchST<Key, Value> {
      * @throws IllegalArgumentException if {@code key} is {@code null}
      */
     public void put(Key key, Value val) {
-        int comparisitions = 0;
+        int comp = 0;
         if (key == null) throw new IllegalArgumentException("first argument to put() is null");
         if (val == null) {
             delete(key);
             return;
         }
         for (Node x = first; x != null; x = x.next) {
-            comparisitions++;
+            comp++;
             if (key.equals(x.key)) {
                 x.val = val;
-                //return;
+                return;
             }
         }
         first = new Node(key, val, first);
         n++;
-        System.out.print("Compares: " + comparisitions + "  -  ");
-        this.total_compares+= comparisitions;
-        System.out.print("Total compares: " + total_compares + "\n");
+        //System.out.println("Compares: " + comp);
+        this.total_comp += comp;
+        //System.out.println("Total Compares: " + this.total_comp);
     }
 
     /**
